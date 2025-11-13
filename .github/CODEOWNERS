@@ -1,0 +1,38 @@
+# This file defines code ownership for automatic review requests
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+# These users will be requested for review when someone opens a pull request
+*       @your-org/core-team
+
+# Documentation
+/docs/                  @your-org/docs-team
+*.md                    @your-org/docs-team
+
+# GitHub Actions and CI/CD
+/.github/workflows/     @your-org/devops-team
+/.github/actions/       @your-org/devops-team
+
+# Build and configuration files
+package.json            @your-org/core-team
+package-lock.json       @your-org/core-team
+tsconfig.json           @your-org/core-team
+.eslintrc.*             @your-org/core-team
+.prettierrc.*           @your-org/core-team
+
+# Source code (customize based on your project structure)
+# /src/                 @your-org/developers
+# /src/api/             @your-org/backend-team
+# /src/ui/              @your-org/frontend-team
+# *.js                  @your-org/js-developers
+# *.ts                  @your-org/ts-developers
+# *.py                  @your-org/python-team
+
+# Tests
+# /test/                @your-org/qa-team
+# *.test.js             @your-org/qa-team
+# *.spec.js             @your-org/qa-team
+
+# Security-sensitive files
+SECURITY.md             @your-org/security-team
+/.github/workflows/     @your-org/security-team @your-org/devops-team
