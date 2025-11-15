@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "marketplace": {
+      "enabled": true,
+      "sources": [
+        {
+          "name": "C0ntr0lledCha0s Marketplace",
+          "owner": "C0ntr0lledCha0s",
+          "repository": "claude-skills-marketplace",
+          "type": "github",
+          "url": "https://github.com/C0ntr0lledCha0s/claude-skills-marketplace"
+        }
+      ]
+    },
+    "enabled_skills": [
+      "code-review",
+      "documentation-generator",
+      "test-generator",
+      "refactor-assistant"
+    ],
+    "auto_update": true
+  },
+  "agents": {
+    "marketplace_agents": {
+      "enabled": true,
+      "source": "C0ntr0lledCha0s"
+    }
+  },
+  "workspace": {
+    "auto_load_skills": true,
+    "skill_discovery": true
+  },
+  "preferences": {
+    "use_marketplace_skills": true,
+    "marketplace_owner": "C0ntr0lledCha0s"
+  }
+}

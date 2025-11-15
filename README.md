@@ -12,6 +12,7 @@ A modern, production-ready GitHub template repository with automated workflows, 
 - **Issue & PR Templates** - Structured templates for bug reports and feature requests
 - **Code Ownership** - CODEOWNERS file for automatic review requests
 - **Comprehensive Documentation** - Contributing guidelines, Code of Conduct, and Security Policy
+- **Claude Code Integration** - Pre-configured for C0ntr0lledCha0s plugin marketplace with AI-assisted development
 
 ## Quick Start
 
@@ -33,6 +34,7 @@ A modern, production-ready GitHub template repository with automated workflows, 
    - Update `package.json` with your project details
    - Modify `.github/CODEOWNERS` with your team information
    - Update contact information in `SECURITY.md`
+   - Customize `.claude/settings.json` for your plugin preferences
    - Customize `README.md` for your project
 
 5. Start developing!
@@ -53,6 +55,9 @@ A modern, production-ready GitHub template repository with automated workflows, 
 │   │   └── config.yml         # Template configuration
 │   ├── PULL_REQUEST_TEMPLATE.md
 │   └── CODEOWNERS             # Code ownership definitions
+├── .claude/                   # Claude Code configuration
+│   ├── settings.json          # Plugin marketplace settings
+│   └── README.md              # Claude Code documentation
 ├── .husky/                    # Git hooks
 │   ├── commit-msg             # Commit message validation
 │   └── pre-commit             # Pre-commit linting
@@ -294,6 +299,60 @@ Common issues:
 - **Test failures**: Run `npm test` locally
 - **Security scan failures**: Review Trivy scan results and update dependencies
 
+## Claude Code Integration
+
+This template includes pre-configured Claude Code settings for enhanced AI-assisted development.
+
+### Features
+
+- **Plugin Marketplace**: Connected to C0ntr0lledCha0s plugin marketplace
+- **AI-Assisted Code Review**: Automated code review suggestions
+- **Documentation Generation**: AI-powered documentation creation
+- **Test Generation**: Automatic test case generation
+- **Refactoring Assistant**: Intelligent refactoring recommendations
+
+### Configuration
+
+Claude Code settings are located in `.claude/settings.json`. The template is configured to use:
+
+- **Marketplace Source**: C0ntr0lledCha0s/claude-skills-marketplace
+- **Auto-Update**: Skills automatically update to latest versions
+- **Skill Discovery**: Automatic discovery of new marketplace skills
+
+### Enabled Skills
+
+The following skills are enabled by default:
+
+1. **code-review** - Automated code review assistance
+2. **documentation-generator** - Generate comprehensive documentation
+3. **test-generator** - Create unit and integration tests
+4. **refactor-assistant** - Code refactoring suggestions
+
+### Customization
+
+To customize Claude Code settings, edit `.claude/settings.json`:
+
+```json
+{
+  "skills": {
+    "enabled_skills": [
+      "your-custom-skill"
+    ]
+  }
+}
+```
+
+For detailed configuration options, see [`.claude/README.md`](.claude/README.md).
+
+### Using Claude Code
+
+1. Ensure Claude Code is installed and configured
+2. Open the repository in your editor
+3. Skills will automatically load from the marketplace
+4. Use Claude Code commands to access AI-assisted features
+
+For more information, visit the [C0ntr0lledCha0s Marketplace](https://github.com/C0ntr0lledCha0s/claude-skills-marketplace).
+
 ## Resources
 
 - [Conventional Commits](https://www.conventionalcommits.org/)
@@ -302,6 +361,8 @@ Common issues:
 - [Commitlint](https://commitlint.js.org/)
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [Semantic Versioning](https://semver.org/)
+- [Claude Code Documentation](https://docs.claude.com/claude-code)
+- [C0ntr0lledCha0s Marketplace](https://github.com/C0ntr0lledCha0s/claude-skills-marketplace)
 
 ## License
 
